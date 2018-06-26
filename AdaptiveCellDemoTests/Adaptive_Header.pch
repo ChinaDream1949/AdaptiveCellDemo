@@ -1,0 +1,24 @@
+//
+//  Adaptive_Header.pch
+//  AdaptiveCellDemo
+//
+//  Created by TG_Boy on 2018/6/19.
+//  Copyright © 2018年 MR.Shaw. All rights reserved.
+//
+
+#ifndef Adaptive_Header_pch
+#define Adaptive_Header_pch
+
+// 颜色
+#define kDeviceWidth [[UIScreen mainScreen] bounds].size.width //当前设备的宽度
+#define kDeviceHeight [[UIScreen mainScreen] bounds].size.height //当前设备的高度
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]//颜色
+#define KWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define kAUTOLAYOUTSACLE (kDeviceWidth/375.0)
+#define KSCOLLING (kDeviceWidth/320)
+#define kIPhone6Scale(x) (x * kAUTOLAYOUTSACLE)
+
+// 第三方
+#import "Masonry.h"
+#import "PYPhotosView.h"
+#endif /* Adaptive_Header_pch */
